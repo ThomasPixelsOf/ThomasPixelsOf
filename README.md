@@ -5,11 +5,3 @@
 ![](https://github-readme-stats.shion.dev/api?username=thomaspixelsof&theme=transparent&hide_border=true&include_all_commits=false&count_private=false)<br/>
 ![](https://streak-stats.demolab.com/?user=thomaspixelsof&theme=transparent&hide_border=true)<br/>
 ![](https://github-readme-stats.shion.dev/api/top-langs/?username=thomaspixelsof&theme=transparent&hide_border=true&include_all_commits=false&count_private=false&layout=compact)
-
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=thomaspixelsof&limit=5&theme=default&combine_all_yearly_contributions=true)
-
----
-[![](https://komarev.com/ghpvc/?username=thomaspixelsof&icon=6&color=5)](https://visitcount.itsvg.in)
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
