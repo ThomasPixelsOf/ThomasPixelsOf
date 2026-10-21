@@ -2,11 +2,17 @@ name: Language stats
 
 on:
   schedule:
-    - cron: "*/5 * * * *" # toutes les 5 minutes
-  workflow_dispatch: {} # lancement manuel pour tester
+    - cron: "*/5 * * * *" # carte des langages : toutes les 5 minutes
+    - cron: "2,32 * * * *" # badges Tech Stack : toutes les 30 minutes (décalé de 2 min)
+  workflow_dispatch: {} # lancement manuel : exécute les deux
 
 permissions:
   contents: write
+
+# Un seul run à la fois pour éviter les conflits de push
+concurrency:
+  group: profile-stats
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -19,7 +25,14 @@ jobs:
           node-version: 20
 
       - name: Generate language card
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '*/5 * * * *'
         run: node stats.mjs
+        env:
+          GH_STATS_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
+
+      - name: Update tech stack badges
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '2,32 * * * *'
+        run: node tech.mjs
         env:
           GH_STATS_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
 
@@ -27,10 +40,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add metrics.plugin.languages.svg
+          git add metrics.plugin.languages.svg README.md
           if git diff --cached --quiet; then
             echo "Aucun changement"
           else
-            git commit -m "chore: update language stats"
+            git commit -m "chore: update profile stats"
+            git pull --rebase
             git push
           fi
