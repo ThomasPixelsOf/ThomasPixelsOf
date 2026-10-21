@@ -222,12 +222,28 @@ const GROUPS = [
 const wantedSet = new Set(Object.keys(CATALOG).filter((b) => detected.has(b) || MANUAL.includes(b)));
 const grouped = new Set(GROUPS.flatMap(([, items]) => items));
 const others = [...wantedSet].filter((b) => !grouped.has(b)).sort((a, b) => a.localeCompare(b));
+// Disposition des titres de catégories : "A" gras au-dessus, "B" gras en ligne, "C" titre h4, "H3" titre h3.
+const LAYOUT = "A";
+const titleFor = {
+  A: (t) => `**${t}**<br/>\n`,
+  B: (t) => `**${t}:**\n`,
+  C: (t) => `#### ${t}\n`,
+  H3: (t) => `### ${t}\n`,
+}[LAYOUT];
+// Commentaire invisible sur le profil : auto = détecté dans tes repos, manual = forcé via MANUAL.
+const tag = (b) => {
+  const auto = detected.has(b), manual = MANUAL.includes(b);
+  return `<!-- ${auto && manual ? "auto + manual" : auto ? "auto" : "manual"} -->`;
+};
 const sections = [...GROUPS, ["Other", others]]
   .map(([title, items]) => [title, items.filter((b) => wantedSet.has(b))])
   .filter(([, items]) => items.length > 0)
-  .map(([title, items]) => `### ${title}\n${items.map((b) => `![${b}](${CATALOG[b]})`).join("\n")}`);
+  .map(([title, items]) => `${titleFor(title)}${items.map((b) => `![${b}](${CATALOG[b]})${tag(b)}`).join("\n")}`);
 const wanted = [...wantedSet];
-const block = `${START}\n${sections.join("\n\n")}\n${END}`;
+const note =
+  "<!-- Bloc généré automatiquement : toute modification ici sera écrasée. " +
+  "auto = détecté dans tes repos, manual = ajouté via la liste MANUAL du script. -->";
+const block = `${START}\n${note}\n${sections.join("\n\n")}\n${END}`;
 
 const current = readFileSync(README, "utf8");
 const re = new RegExp(`${START}[\\s\\S]*?${END}`);
