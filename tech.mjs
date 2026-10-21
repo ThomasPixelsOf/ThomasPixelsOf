@@ -209,20 +209,20 @@ const detected = new Set(
   [...hits].filter(([, set]) => set.size >= MIN_REPOS).map(([badge]) => badge)
 );
 // Catégories affichées dans le README, dans cet ordre. Chaque catégorie est en ordre alphabétique.
-// Un badge absent de toutes les catégories est placé dans "Autres" à la fin.
+// Un badge absent de toutes les catégories est placé dans "Other" à la fin.
 const GROUPS = [
-  ["Langages", ["Bash Script", "C", "C#", "C++", "CSS3", "HTML5", "Java", "JavaScript", "Kotlin", "PowerShell", "Python", "Rust", "TypeScript"]],
-  ["Runtime et web", [".Net", "Bun", "Electron.js", "JWT", "Nginx", "NodeJS", "NPM", "SQLite", "Tampermonkey", "Vite"]],
-  ["Graphique et natif", ["Bevy", "CMake", "FFmpeg", "nVIDIA", "OpenGL", "Unreal Engine", "WebGL"]],
+  ["Languages", ["Bash Script", "C", "C#", "C++", "CSS3", "HTML5", "Java", "JavaScript", "Kotlin", "PowerShell", "Python", "Rust", "TypeScript"]],
+  ["Runtime & Web", [".Net", "Bun", "Electron.js", "JWT", "Nginx", "NodeJS", "NPM", "SQLite", "Tampermonkey", "Vite"]],
+  ["Graphics & Native", ["Bevy", "CMake", "FFmpeg", "nVIDIA", "OpenGL", "Unreal Engine", "WebGL"]],
   ["Cloud", ["Azure", "Cloudflare", "Firebase"]],
-  ["Tests", ["Playwright", "Selenium"]],
-  ["Outils", ["Confluence", "Git", "Jira", "Notion", "Power Bi"]],
-  ["Système et self-hosting", ["Bitwarden", "Home Assistant", "Pi-Hole", "Plex", "Prometheus", "Raspberry Pi", "TOR", "XFCE"]],
+  ["Testing", ["Playwright", "Selenium"]],
+  ["Tools", ["Confluence", "Git", "Jira", "Notion", "Power Bi"]],
+  ["Systems & Self-hosting", ["Bitwarden", "Home Assistant", "Pi-Hole", "Plex", "Prometheus", "Raspberry Pi", "TOR", "XFCE"]],
 ];
 const wantedSet = new Set(Object.keys(CATALOG).filter((b) => detected.has(b) || MANUAL.includes(b)));
 const grouped = new Set(GROUPS.flatMap(([, items]) => items));
 const others = [...wantedSet].filter((b) => !grouped.has(b)).sort((a, b) => a.localeCompare(b));
-const sections = [...GROUPS, ["Autres", others]]
+const sections = [...GROUPS, ["Other", others]]
   .map(([title, items]) => [title, items.filter((b) => wantedSet.has(b))])
   .filter(([, items]) => items.length > 0)
   .map(([title, items]) => `### ${title}\n${items.map((b) => `![${b}](${CATALOG[b]})`).join("\n")}`);
