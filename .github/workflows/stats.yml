@@ -2,7 +2,7 @@ name: Language stats
 
 on:
   schedule:
-    - cron: "17 3 * * *" # chaque nuit à 03:17 UTC
+    - cron: "*/5 * * * *" # toutes les 5 minutes
   workflow_dispatch: {} # lancement manuel pour tester
 
 permissions:
