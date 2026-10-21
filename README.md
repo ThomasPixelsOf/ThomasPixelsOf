@@ -54,6 +54,7 @@
 
 **Systems & Self-hosting**<br/>
 ![Raspberry Pi](https://img.shields.io/badge/-Raspberry_Pi-C51A4A?style=plastic&logo=Raspberry-Pi)<!-- manual -->
+<!-- rajouter linux(ubuntu kubuntu))-->
 <!-- TECH-END -->
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.shion.dev/api?username=thomaspixelsof&theme=transparent&hide_border=true&include_all_commits=false&count_private=false)<br/>
