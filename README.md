@@ -47,12 +47,9 @@
 ![Confluence](https://img.shields.io/badge/confluence-%23172BF4.svg?style=plastic&logo=confluence&logoColor=white)<!-- manual -->
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=plastic&logo=git&logoColor=white)<!-- manual -->
 ![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=plastic&logo=jira&logoColor=white)<!-- manual -->
-![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=plastic&logo=powerbi&logoColor=black)<!-- manual -->
 
 **Systems & Self-hosting**<br/>
-![Bitwarden](https://img.shields.io/badge/bitwarden-%23175DDC.svg?style=plastic&logo=bitwarden&logoColor=white)<!-- manual -->
 ![Raspberry Pi](https://img.shields.io/badge/-Raspberry_Pi-C51A4A?style=plastic&logo=Raspberry-Pi)<!-- manual -->
-![XFCE](https://img.shields.io/badge/XFCE-%232284F2.svg?style=plastic&logo=xfce&logoColor=white)<!-- manual -->
 <!-- TECH-END -->
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.shion.dev/api?username=thomaspixelsof&theme=transparent&hide_border=true&include_all_commits=false&count_private=false)<br/>
