@@ -208,8 +208,30 @@ for (const r of repos) {
 const detected = new Set(
   [...hits].filter(([, set]) => set.size >= MIN_REPOS).map(([badge]) => badge)
 );
-const wanted = Object.keys(CATALOG).filter((b) => detected.has(b) || MANUAL.includes(b));
-const block = `${START}\n${wanted.map((b) => `![${b}](${CATALOG[b]})`).join(" ")}\n${END}`;
+// Ordre d'affichage logique : langages, runtime/web, graphique/natif, cloud, tests, outils, système/self-host.
+// Un badge absent de cette liste est ajouté à la fin.
+// Chaque groupe est en ordre alphabétique.
+const ORDER = [
+  // Langages
+  "Bash Script", "C", "C#", "C++", "CSS3", "HTML5", "Java", "JavaScript", "Kotlin", "PowerShell", "Python", "Rust", "TypeScript",
+  // Runtime et web
+  ".Net", "Bun", "Electron.js", "JWT", "Nginx", "NodeJS", "NPM", "SQLite", "Tampermonkey", "Vite",
+  // Graphique et natif
+  "Bevy", "CMake", "FFmpeg", "nVIDIA", "OpenGL", "Unreal Engine", "WebGL",
+  // Cloud
+  "Azure", "Cloudflare", "Firebase",
+  // Tests
+  "Playwright", "Selenium",
+  // Outils
+  "Confluence", "Git", "Jira", "Notion", "Power Bi",
+  // Système et self-hosting
+  "Bitwarden", "Home Assistant", "Pi-Hole", "Plex", "Prometheus", "Raspberry Pi", "TOR", "XFCE",
+];
+const rank = (b) => (ORDER.includes(b) ? ORDER.indexOf(b) : ORDER.length);
+const wanted = Object.keys(CATALOG)
+  .filter((b) => detected.has(b) || MANUAL.includes(b))
+  .sort((a, b) => rank(a) - rank(b));
+const block = `${START}\n${wanted.map((b) => `![${b}](${CATALOG[b]})`).join("\n")}\n${END}`;
 
 const current = readFileSync(README, "utf8");
 const re = new RegExp(`${START}[\\s\\S]*?${END}`);
