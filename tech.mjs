@@ -17,11 +17,17 @@ const EXCLUDE_ARCHIVED = true;
 const EXCLUDE_REPOS = new Set([]); // ex: ["ThomasPixelsOf/old-stuff"]
 const MIN_REPOS = 1; // nombre de repos minimum pour afficher un badge détecté
 
-// Badges toujours affichés (non détectables dans le code). Noms = clés du CATALOG.
+// Badges toujours affichés, en plus de ceux détectés automatiquement.
+// Noms = clés du CATALOG. Retire une ligne pour la laisser en détection automatique seule.
 const MANUAL = [
+  // Outils non détectables dans le code
   "Git", "Selenium", "OpenGL", "WebGL", "FFmpeg", "XFCE", "TOR", "nVIDIA",
   "Raspberry Pi", "Power Bi", "Prometheus", "Plex", "Jira", "Notion",
   "Pi-Hole", "Home Assistant", "Confluence", "Bitwarden",
+  // Compétences gardées même si elles ne sont pas (ou plus) dans un de tes repos
+  "Java", "PowerShell", "Python", "Kotlin", "C", "C#", "C++", "CMake",
+  "Azure", "Cloudflare", "Firebase", ".Net", "JWT", "Nginx", "SQLite",
+  "Playwright", "Unreal Engine", "Tampermonkey",
 ];
 // ------------------
 
