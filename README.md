@@ -25,17 +25,20 @@
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=plastic&logo=node.js&logoColor=white)<!-- auto -->
 ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=plastic&logo=npm&logoColor=white)<!-- auto -->
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=plastic&logo=sqlite&logoColor=white)<!-- manual -->
+![Tampermonkey](https://img.shields.io/badge/tampermonkey-%2300485B.svg?style=plastic&logo=tampermonkey&logoColor=white)<!-- manual -->
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=plastic&logo=vite&logoColor=white)<!-- auto -->
 
 **Graphics & Native**<br/>
 ![Bevy](https://img.shields.io/badge/bevy-%23232326.svg?style=plastic&logo=bevy&logoColor=white)<!-- auto -->
 ![CMake](https://img.shields.io/badge/CMake-%23008FBA.svg?style=plastic&logo=cmake&logoColor=white)<!-- manual -->
 ![FFmpeg](https://shields.io/badge/FFmpeg-%23171717.svg?logo=ffmpeg&style=plastic&labelColor=171717&logoColor=5cb85c)<!-- manual -->
+![nVIDIA](https://img.shields.io/badge/nVIDIA-%2376B900.svg?style=plastic&logo=nVIDIA&logoColor=white)<!-- manual -->
 ![OpenGL](https://img.shields.io/badge/OpenGL-%23FFFFFF.svg?style=plastic&logo=opengl)<!-- manual -->
+![Unreal Engine](https://img.shields.io/badge/unrealengine-%23313131.svg?style=plastic&logo=unrealengine&logoColor=white)<!-- manual -->
 ![WebGL](https://img.shields.io/badge/WebGL-990000?logo=webgl&logoColor=white&style=plastic)<!-- manual -->
 
 **Cloud**<br/>
-![Azure M365](https://img.shields.io/badge/azure-%230072C6.svg?style=plastic&logo=microsoftazure&logoColor=white)<!-- manual -->
+![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=plastic&logo=microsoftazure&logoColor=white)<!-- manual -->
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=plastic&logo=Cloudflare&logoColor=white)<!-- manual -->
 ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=plastic&logo=firebase)<!-- manual -->
 
@@ -47,14 +50,18 @@
 ![Confluence](https://img.shields.io/badge/confluence-%23172BF4.svg?style=plastic&logo=confluence&logoColor=white)<!-- manual -->
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=plastic&logo=git&logoColor=white)<!-- manual -->
 ![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=plastic&logo=jira&logoColor=white)<!-- manual -->
-
-
-
-<!--ajouter vscode, vmware,virtualbox, android studio, adb, tailscale, mpv, Claude Code, Kilo Code, termux, termius rustdesk, json, jsonl, yml,yaml, unigetui/winget, gpartedliveusb, kubuntu,debian, ubuntu, linuxmint, gnome, kde plasma, windows, flask, venv, qt, jadx, vulkan, voicemeeter, steelseries sonar, obs, m365 apps, uv, mp4 mp3 mkv avi x264 x265 aac sbc hevc av1 ogg, hdr, hdr10+, flac, brave, codex, github,  filezilla, winscp, ssh, sftp, ftp, smb, samba, wgsl, deskflow, ollama, pocketpal, mcreator, windhawk, easyeffects, rethinkdns, libcheker, app inspector, exodus, tracker control slim, paperknife+ makeAcopy, librespeed-cli, parsec, msi afterburner, cinebench, hwinfo, crystaldiskmark et info, userdiag, coretemp, poolmon, rammap, openwrt, everything, bluetooth, azahar multiplayer self host, minecraft server self host, vps, dns, bat, ps1, csv, docx, xlsx, , cpp, apk, photopea, vegas pro, cpu z gpu z, occt, msi kombustor, furmark, 3dmark, burpsuite, cargo,  qwen, glm, minifer, mangling, reverse engineering, obsfuscating,   rasberry OS, sublime text, subtitle edit, adguarddns, quad9dns, dnscrypt, doh odoh, .iso, pkg, flathub, oracle, mousewithoutborders, inputleap, elgato, bitlocker, bitwarden, .pyw, py, .vmx,  gradle, kt, svg, png, jpeg(jpg,), MOV, 2.4Ghz, 5Ghz, 6Ghz, aptx lossless, ldac, llm, vlm aes tls, fat32, ntfs, exfat, zfs, apfs, tsx, egui eframe)-->
+![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=plastic&logo=notion&logoColor=white)<!-- manual -->
+![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=plastic&logo=powerbi&logoColor=black)<!-- manual -->
 
 **Systems & Self-hosting**<br/>
+![Bitwarden](https://img.shields.io/badge/bitwarden-%23175DDC.svg?style=plastic&logo=bitwarden&logoColor=white)<!-- manual -->
+![Home Assistant](https://img.shields.io/badge/home%20assistant-%2341BDF5.svg?style=plastic&logo=home-assistant&logoColor=white)<!-- manual -->
+![Pi-Hole](https://img.shields.io/badge/pihole-%2396060C.svg?style=plastic&logo=pi-hole&logoColor=white)<!-- manual -->
+![Plex](https://img.shields.io/badge/plex-%23E5A00D.svg?style=plastic&logo=plex&logoColor=white)<!-- manual -->
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=plastic&logo=Prometheus&logoColor=white)<!-- manual -->
 ![Raspberry Pi](https://img.shields.io/badge/-Raspberry_Pi-C51A4A?style=plastic&logo=Raspberry-Pi)<!-- manual -->
-<!-- rajouter linux(ubuntu kubuntu))-->
+![TOR](https://img.shields.io/badge/tor-%237E4798.svg?style=plastic&logo=tor-project&logoColor=white)<!-- manual -->
+![XFCE](https://img.shields.io/badge/XFCE-%232284F2.svg?style=plastic&logo=xfce&logoColor=white)<!-- manual -->
 <!-- TECH-END -->
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.shion.dev/api?username=thomaspixelsof&theme=transparent&hide_border=true&include_all_commits=false&count_private=false)<br/>
