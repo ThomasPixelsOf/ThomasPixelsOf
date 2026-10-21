@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="186" viewBox="0 0 400 186" font-family="Segoe UI, Ubuntu, Sans-Serif">
+<style>
+  .bg{fill:none;stroke:none}
+  text{fill:#434d58}
+  .title{font-size:16px;font-weight:600;fill:#2f80ed}
+  @media (prefers-color-scheme: dark){text{fill:#c9d1d9} .title{fill:#58a6ff}}
+</style>
+<rect class="bg" x="0.5" y="0.5" width="399" height="185" rx="6"/>
+<text class="title" x="20" y="32">Most Used Languages</text>
+<clipPath id="c"><rect x="20" y="48" width="360" height="8" rx="4"/></clipPath>
+<g clip-path="url(#c)"><rect x="20.00" y="48" width="134.15" height="8" fill="#3178c6"/><rect x="154.15" y="48" width="111.72" height="8" fill="#f1e05a"/><rect x="265.87" y="48" width="59.54" height="8" fill="#e34c26"/><rect x="325.41" y="48" width="30.16" height="8" fill="#563d7c"/><rect x="355.56" y="48" width="11.33" height="8" fill="#3572A5"/><rect x="366.89" y="48" width="7.84" height="8" fill="#89e051"/><rect x="374.73" y="48" width="2.86" height="8" fill="#dea584"/><rect x="377.59" y="48" width="2.41" height="8" fill="#b07219"/></g>
+<circle cx="25" cy="78" r="5" fill="#3178c6"/><text x="36" y="82" font-size="12">TypeScript 36.9%</text><circle cx="205" cy="78" r="5" fill="#f1e05a"/><text x="216" y="82" font-size="12">Markdown 30.7%</text><circle cx="25" cy="102" r="5" fill="#e34c26"/><text x="36" y="106" font-size="12">JavaScript 16.4%</text><circle cx="205" cy="102" r="5" fill="#563d7c"/><text x="216" y="106" font-size="12">Rust 8.3%</text><circle cx="25" cy="126" r="5" fill="#3572A5"/><text x="36" y="130" font-size="12">CSS 3.1%</text><circle cx="205" cy="126" r="5" fill="#89e051"/><text x="216" y="130" font-size="12">HTML 2.2%</text><circle cx="25" cy="150" r="5" fill="#dea584"/><text x="36" y="154" font-size="12">SVG 0.8%</text><circle cx="205" cy="150" r="5" fill="#b07219"/><text x="216" y="154" font-size="12">WGSL 0.7%</text>
+</svg>
